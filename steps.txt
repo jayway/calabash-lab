@@ -26,6 +26,9 @@ To Create a calabash target for your iOS project:
 (source. https://github.com/calabash/calabash-ios)
 
 
+To generate feature folder for Android:
+- calabash-android gen
+
 2.Look what you got, on iOS under /Library/Ruby/Gems/[version]/gems/ 
 The things starting with calabash contains stuff that will be used. You do not have to understand or modify any of these 
 
