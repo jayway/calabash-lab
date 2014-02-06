@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res" >
+            <file
+                name="icon"
+                path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res/drawable/icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="note_edit"
+                path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res/layout/note_edit.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="notes_list"
+                path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res/layout/notes_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="notes_row"
+                path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res/layout/notes_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="edit_note" >Edit Note
+                </string>
+                <string name="confirm" >Confirm
+                </string>
+                <string name="menu_insert" >Add Note
+                </string>
+                <string name="title" >Title
+                </string>
+                <string name="app_name" >Notepad v3
+                </string>
+                <string name="body" >Body
+                </string>
+                <string name="menu_delete" >Delete Note
+                </string>
+                <string name="no_notes" >No Notes Yet
+                </string>
+            </file>
+        </source>
+        <source path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/esterytterbrink/KKod/pumpkin/Notepadv3Solution/app/src/debug/res" />
+    </dataSet>
+
+</merger>

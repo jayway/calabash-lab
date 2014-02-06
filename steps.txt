@@ -1,0 +1,39 @@
+1. Install Calaba.sh, 
+
+- Ruby (ruby -v in a terminal should print ruby 1.8.7 or higher, I’ve got 2.0.0)
+
+For iOS:
+- A mac running Xcode.
+- The iOS project to play with, found in
+
+For Android: 
+- The Android SDK installed and the environment variable ANDROID_HOME set pointing to it
+- Ant installed and added to your path
+- The APK that we use to demo on, found here: 
+
+To install Calaba.sh for Android:
+- Run sudo gem install calabash-android
+(source: https://github.com/calabash/calabash-android/blob/master/documentation/installation.md)
+
+To install Calaba.sh for iOS:
+- cd into your project folder (workspaces did not work very well), the one containing the .xcodeproj file. 
+- run sudo gem install calabash-cucumber
+
+To Create a calabash target for your iOS project:
+- calabash-ios setup (answer the questions)
+- calabas-ios gen
+- In Xcode, build the project using the -cal scheme
+(source. https://github.com/calabash/calabash-ios)
+
+
+2.Look what you got, on iOS under /Library/Ruby/Gems/[version]/gems/ 
+The things starting with calabash contains stuff that will be used. You do not have to understand or modify any of these 
+
+3. Write feature files, using cucumber syntax. Look at the predefined steps. When you need a step not yet defined, add it in a steps file. 
+
+4. Test on Android by standing in the same folder as your apk and run
+	calabash-android run notes.apk 
+And on iOS by standing in the same folder as your features folder and run
+	cucumber 
+
+5. When you have written a good step, merge it back in to master, so that we all can enjoy it.
